@@ -25,9 +25,11 @@ class Home extends StatelessWidget {
               splashColor: Colors.red,
               child: Text("Goto Dashboard"),
               onPressed: () {
-                String title = "Ini  halamn home";
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Dashboard(title)));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Dashboard(
+                          button: "button",
+                          title: "halaman biasa",
+                        )));
               },
             ),
           ),
